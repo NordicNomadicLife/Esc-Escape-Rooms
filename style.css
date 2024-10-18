@@ -226,3 +226,83 @@ main {
     display: flex;
 }
 
+.osToday{
+    display: flex;
+    flex-direction: column;
+}
+
+.osToday img{
+    width: 100%;
+}
+
+.osTodayText{
+    display: flex;
+    align-self: center;
+    margin: 20px 10px 20px 10px ;
+}
+
+.osTodayTextSmall{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px 40px 10px;
+}
+
+.osTodayButton{
+    padding: 1rem 2rem;
+    background-color: #E3170A;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 16px;
+    width: fit-content;
+    margin: 0 0 40px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.allChallenges{
+    display: flex;
+    flex-direction: column;
+}
+
+.allChallenges img{
+    width: 100%;
+}
+
+.allChallengesText{
+    display: flex;
+    align-self: center;
+    margin: 20px 10px 20px 10px ;
+}
+
+.allChallengesTextSmall{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px 40px 10px;
+}
+
+.allChallengesButton{
+    padding: 1rem 2rem;
+    background-color: #E3170A;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 16px;
+    width: fit-content;
+    margin: 0 0 40px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.footerName{
+    margin: 10px 150px 10px 10px;
+}
