@@ -50,12 +50,11 @@ main {
     background-color: #8ACFE5;
     border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
-    margin: 2rem 0 1.5rem;
+    margin: 20px 10px;
     width: 100%;
-    height: 2.5rem;
-    padding: 0.5rem 1rem;
+    padding: 15px 15px;
 }
 
 .OSC {
@@ -65,15 +64,14 @@ main {
     width: 100%;
     text-decoration: underline;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    padding: 15px;
 }
 
 .quoteContainer {
     display: flex;
     align-items: center;
-    padding: 1rem;
-    margin-top: 1.5rem;
+    padding: 10px;
+    margin: 15px;
     width: 90%;
     border-radius: 5px;
     box-sizing: border-box;
@@ -82,7 +80,7 @@ main {
 
 .face {
     width: 73.34px;
-    margin-right: 1rem;
+    margin-right: 10px;
 }
 
 .quoteText  {
@@ -109,7 +107,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 15px;
 }
 
 .cardWrapper{
@@ -132,7 +130,7 @@ main {
 .challengeCard h2{
     font-size: 18px;
     font-weight: bold;
-    margin: 1rem 1rem 0.5rem;
+    margin: 15px 15px 0;
 }
 
 .cardPicture {
@@ -147,7 +145,7 @@ main {
 .starContainer {
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+    margin:-10px 0 10px 15px;
 }
 
 .starContainer img {
@@ -221,7 +219,7 @@ main {
     border-radius: 5%;
     font-size: 18px;
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 15px 30px;
     align-self: center;
     display: flex;
 }
