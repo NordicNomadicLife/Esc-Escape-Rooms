@@ -1,5 +1,7 @@
 html {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-content: center;
 }
 
 .top {
@@ -28,6 +30,8 @@ h1 {
 .logo {
     width: 128px;
     height: auto;
+    margin: 15px 10px 15px 15px;
+
 }
 
 .companyName {
@@ -83,7 +87,7 @@ main {
     margin-right: 10px;
 }
 
-.quoteText  {
+.quoteText {
     font-size: 19px;
     font-style: italic;
     font-weight: 400;
@@ -92,9 +96,11 @@ main {
     flex: 1;
     margin-bottom: 0;
 }
-.quoteText p{
+
+.quoteText p {
     margin-bottom: 0;
 }
+
 .quote small {
     display: block;
     font-size: 12px;
@@ -110,12 +116,15 @@ main {
     margin-bottom: 15px;
 }
 
-.cardWrapper{
+.cardWrapper {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
     width: 90%;
+    overflow-y: hidden;
+
 }
+
 .challengeCard {
     flex: 0 0 auto;
     width: 100%;
@@ -127,7 +136,8 @@ main {
     display: flex;
     flex-direction: column;
 }
-.challengeCard h2{
+
+.challengeCard h2 {
     font-size: 18px;
     font-weight: bold;
     margin: 15px 15px 0;
@@ -145,7 +155,7 @@ main {
 .starContainer {
     display: flex;
     align-items: center;
-    margin:-10px 0 10px 15px;
+    margin: -10px 0 10px 15px;
 }
 
 .starContainer img {
@@ -170,7 +180,7 @@ main {
     border-radius: 0.5rem;
     font-size: 16px;
     width: auto;
-    align-self:flex-end;
+    align-self: flex-end;
     margin: 0 10px 10px 0;
 }
 
@@ -193,16 +203,16 @@ main {
     display: block;
 }
 
-.fullStory{
+.fullStory {
     background-color: #011827;
     color: white;
     width: 100%;
-    height: 340px;   
+    height: 340px;
     display: flex;
     flex-direction: column;
 }
 
-.fullStoryText{
+.fullStoryText {
     display: flex;
     align-items: center;
     font-size: 22px;
@@ -212,7 +222,7 @@ main {
     margin-right: 30px;
 }
 
-.fullStoryButton{
+.fullStoryButton {
     background-color: black;
     color: #8ACFE5;
     border: 2px solid #8ACFE5;
@@ -224,22 +234,22 @@ main {
     display: flex;
 }
 
-.osToday{
+.osToday {
     display: flex;
     flex-direction: column;
 }
 
-.osToday img{
+.osToday img {
     width: 100%;
 }
 
-.osTodayText{
+.osTodayText {
     display: flex;
     align-self: center;
-    margin: 20px 10px 20px 10px ;
+    margin: 20px 10px 20px 10px;
 }
 
-.osTodayTextSmall{
+.osTodayTextSmall {
     display: flex;
     align-self: center;
     font-weight: bold;
@@ -247,7 +257,7 @@ main {
     margin: 0 10px 40px 10px;
 }
 
-.osTodayButton{
+.osTodayButton {
     padding: 1rem 2rem;
     background-color: #E3170A;
     color: white;
@@ -260,22 +270,22 @@ main {
     font-size: 18px;
 }
 
-.allChallenges{
+.allChallenges {
     display: flex;
     flex-direction: column;
 }
 
-.allChallenges img{
+.allChallenges img {
     width: 100%;
 }
 
-.allChallengesText{
+.allChallengesText {
     display: flex;
     align-self: center;
-    margin: 20px 10px 20px 10px ;
+    margin: 20px 10px 20px 10px;
 }
 
-.allChallengesTextSmall{
+.allChallengesTextSmall {
     display: flex;
     align-self: center;
     font-weight: bold;
@@ -283,7 +293,7 @@ main {
     margin: 0 10px 40px 10px;
 }
 
-.allChallengesButton{
+.allChallengesButton {
     padding: 1rem 2rem;
     background-color: #E3170A;
     color: white;
@@ -296,27 +306,27 @@ main {
     font-size: 18px;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 40px 0 40px;
 }
 
-.footerName{
+.footerName {
     margin: 10px 10px 10px 15px;
 }
 
-.footerTextSmall{
+.footerTextSmall {
     margin: 10px 15px;
     font-size: 14px;
 }
 
-.siteMap{
+.siteMap {
     display: flex;
     flex-direction: column;
 }
 
-.siteMapText{
+.siteMapText {
     margin: 10px 15px 10px;
 }
 
@@ -327,26 +337,33 @@ footer{
     font-size: 14px;
 }
 
-.siteMap ul li{
+.siteMap ul li {
     list-style-type: none;
 }
 
-.spacer{
+.spacer {
     margin: 10px;
 }
 
-.followUs{
+.followUs {
     display: flex;
     flex-direction: column;
 }
 
-.followUsText{
+.followUsText {
     margin: 20px 15px 10px;
 }
 
-.followUs ul{
+.followUs ul {
     display: flex;
     flex-direction: column;
     margin: 0 -25px;
     font-size: 14px;
+}
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        width: 100%;
+    }
 }
