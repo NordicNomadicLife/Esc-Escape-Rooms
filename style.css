@@ -1,42 +1,196 @@
-html{
-    font-family: roboto;
-  
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
-.top{
+.top {
     background-color: #011827;
-    color: white
+    color: white;
 }
 
-header{
+header {
     display: flex;
     width: 100%;
     height: 144px;
     align-items: center;
 }
 
-h1{
-    width: 20%;
+.topTop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.logo{
+
+h1 {
+    width: 20%;
+    font-size: 24px;
+}
+
+.logo {
     width: 128px;
     height: auto;
 }
 
-.companyName{
+.companyName {
     font-size: 24px;
 }
 
-
-
-.topPicture{
+.topPicture {
     width: 100%;
 }
 
-.topMeny{
-    display: none;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.quote{
-    display: flex;
+.OC {
+    background-color: #8ACFE5;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2rem 0 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
 }
+
+.OSC {
+    border: none;
+    background-color: white;
+    color: #36769D;
+    width: 100%;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.quoteContainer {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    width: 90%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.face {
+    width: 73.34px;
+    margin-right: 1rem;
+}
+
+.quoteText  {
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 0;
+}
+.quoteText p{
+    margin-bottom: 0;
+}
+.quote small {
+    display: block;
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+}
+
+.challengeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.cardWrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 90%;
+}
+.challengeCard {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardPicture {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+}
+
+.starContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.starContainer img {
+    margin-right: 0.3rem;
+}
+
+.starText {
+    font-size: 14px;
+}
+
+.challengeCard p {
+    margin: 1rem;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* !!! jag får inte till knappen på höger sida */
+.bookButton {
+    padding: 0.8rem;
+    background-color: #E3170A;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    width: 140px;
+}
+
+.challengeButton {
+    background-color: #8ACFE5;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 2rem 0 1.5rem;
+    width: 70%;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.onlineChallenges {
+    color: #36769D;
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: block;
+}
+
