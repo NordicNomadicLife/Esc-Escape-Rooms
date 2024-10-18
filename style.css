@@ -301,8 +301,54 @@ main {
 footer{
     background-color: black;
     color: white;
+    padding: 40px 0 40px;
 }
 
 .footerName{
-    margin: 10px 150px 10px 10px;
+    margin: 10px 10px 10px 15px;
+}
+
+.footerTextSmall{
+    margin: 10px 15px;
+    font-size: 14px;
+}
+
+.siteMap{
+    display: flex;
+    flex-direction: column;
+}
+
+.siteMapText{
+    margin: 10px 15px 10px;
+}
+
+.siteMap ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -25px;
+    font-size: 14px;
+}
+
+.siteMap ul li{
+    list-style-type: none;
+}
+
+.spacer{
+    margin: 10px;
+}
+
+.followUs{
+    display: flex;
+    flex-direction: column;
+}
+
+.followUsText{
+    margin: 20px 15px 10px;
+}
+
+.followUs ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 -25px;
+    font-size: 14px;
 }
