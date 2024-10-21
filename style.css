@@ -1,0 +1,417 @@
+html {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+@media screen and (min-width: 800px) {
+  html {
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+  }
+}
+
+.top {
+  background-color: #011827;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 144px;
+}
+
+.navLink ul {
+  display: none;
+  list-style: none;
+}
+@media screen and (min-width: 800px) {
+  .navLink ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: -10px;
+  }
+}
+.navLink ul :hover {
+  color: #8ACFE5;
+  cursor: pointer;
+}
+
+.topTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  width: 20%;
+  font-size: 24px;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    width: 100%;
+  }
+}
+
+.logo {
+  width: 128px;
+  height: auto;
+  margin: 15px 10px 15px 15px;
+}
+
+.companyName {
+  font-size: 24px;
+}
+
+.topPicture {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.OC {
+  border: none;
+  background-color: white;
+  color: #36769D;
+  width: 100%;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 15px;
+}
+@media screen and (min-width: 800px) {
+  .OC {
+    background-color: #E3170A;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 10px;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: -25px;
+  }
+}
+
+.OSC {
+  background-color: #8ACFE5;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 10px;
+}
+@media screen and (min-width: 800px) {
+  .OSC {
+    margin-top: -25px;
+    min-width: fit-content;
+  }
+}
+
+.quoteContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 15px;
+  width: 90%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.face {
+  width: 73.34px;
+  margin-right: 10px;
+}
+
+.quoteText {
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.quoteText p {
+  margin-bottom: 0;
+}
+
+.quote small {
+  display: block;
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+}
+
+.challengeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 90%;
+  overflow-y: hidden;
+}
+
+.challengeCard {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+.challengeCard h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 15px 0;
+}
+
+.cardPicture {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 0;
+}
+
+.starContainer {
+  display: flex;
+  align-items: center;
+  margin: -10px 0 10px 15px;
+}
+
+.starContainer img {
+  margin-right: 0.3rem;
+}
+
+.starText {
+  font-size: 14px;
+}
+
+.challengeCard p {
+  margin: 1rem;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bookButton {
+  padding: 1rem 2rem;
+  background-color: #E3170A;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  width: auto;
+  align-self: flex-end;
+  margin: 0 10px 10px 0;
+}
+
+.challengeButton {
+  background-color: #8ACFE5;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 2rem 0 1.5rem;
+  width: 70%;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.onlineChallenges {
+  color: #36769D;
+  text-decoration: underline;
+  margin-top: 1rem;
+  display: block;
+}
+
+.fullStory {
+  background-color: #011827;
+  color: white;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullStoryText {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.fullStoryButton {
+  background-color: black;
+  color: #8ACFE5;
+  border: 2px solid #8ACFE5;
+  border-radius: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  align-self: center;
+  display: flex;
+}
+
+.osToday {
+  display: flex;
+  flex-direction: column;
+}
+
+.osToday img {
+  width: 100%;
+}
+
+.osTodayText {
+  display: flex;
+  align-self: center;
+  margin: 20px 10px 20px 10px;
+}
+
+.osTodayTextSmall {
+  display: flex;
+  align-self: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px 40px 10px;
+}
+
+.osTodayButton {
+  padding: 1rem 2rem;
+  background-color: #E3170A;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 0 40px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.allChallenges {
+  display: flex;
+  flex-direction: column;
+}
+
+.allChallenges img {
+  width: 100%;
+}
+
+.allChallengesText {
+  display: flex;
+  align-self: center;
+  margin: 20px 10px 20px 10px;
+}
+
+.allChallengesTextSmall {
+  display: flex;
+  align-self: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px 40px 10px;
+}
+
+.allChallengesButton {
+  padding: 1rem 2rem;
+  background-color: #E3170A;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 0 40px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0 40px;
+}
+
+.footerName {
+  margin: 10px 10px 10px 15px;
+}
+
+.footerTextSmall {
+  margin: 10px 15px;
+  font-size: 14px;
+}
+
+.siteMap {
+  display: flex;
+  flex-direction: column;
+}
+
+.siteMapText {
+  margin: 10px 15px 10px;
+}
+
+.siteMap ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -25px;
+  font-size: 14px;
+}
+
+.siteMap ul li {
+  list-style-type: none;
+}
+
+.spacer {
+  margin: 10px;
+}
+
+.followUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.followUsText {
+  margin: 20px 15px 10px;
+}
+
+.followUs ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -25px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */

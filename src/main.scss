@@ -1,30 +1,63 @@
+$MinBreakPoint: 800px;
+$MaxBreakPoint: 1600px;
+
+
 html {
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     align-content: center;
+    @media screen and (min-width: $MinBreakPoint){
+        display: grid ;
+        grid-template-columns: repeat(12 1fr);
+    }
 }
 
 .top {
     background-color: #011827;
     color: white;
+   
 }
 
 header {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 144px;
-    align-items: center;
+    
+    
+}
+
+.navLink{
+    ul{
+    display: none;
+    list-style: none;
+    @media screen and (min-width: $MinBreakPoint) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: -10px;
+    }
+    :hover{
+        color:#8ACFE5;
+        cursor: pointer;
+    }
+}
 }
 
 .topTop {
     display: flex;
     align-items: center;
     gap: 10px;
+   
 }
 
 h1 {
     width: 20%;
     font-size: 24px;
+    @media screen and (min-width: $MinBreakPoint){
+        width: 100%;
+    }
 }
 
 .logo {
@@ -50,18 +83,13 @@ main {
     width: 100%;
 }
 
-.OC {
-    background-color: #8ACFE5;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 20px 10px;
-    width: 100%;
-    padding: 15px 15px;
+.buttons{
+    @media screen and (min-width: $MinBreakPoint){
+        display: flex;
+        flex-direction: row;
+    }
 }
-
-.OSC {
+.OC {
     border: none;
     background-color: white;
     color: #36769D;
@@ -69,6 +97,37 @@ main {
     text-decoration: underline;
     font-weight: bold;
     padding: 15px;
+    
+
+    @media screen and (min-width: $MinBreakPoint) {
+        background-color: #E3170A;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 10px;
+        padding: 15px;
+        text-decoration: none;
+        margin-top: -25px;
+    }
+}
+
+.OSC {
+    background-color: #8ACFE5;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    padding: 15px;
+    margin: 20px 10px;
+   
+
+    @media screen and (min-width: $MinBreakPoint) {
+        
+        margin-top: -25px;
+        min-width: fit-content;
+    }
 }
 
 .quoteContainer {
