@@ -33,6 +33,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: -10px;
+    font-size: 20px;
   }
 }
 .navLink ul :hover {
@@ -42,7 +43,6 @@ header {
 
 .topTop {
   display: flex;
-  align-items: center;
   gap: 10px;
 }
 
@@ -53,6 +53,8 @@ h1 {
 @media screen and (min-width: 800px) {
   h1 {
     width: 100%;
+    align-self: flex-end;
+    font-size: 35px;
   }
 }
 
@@ -60,10 +62,6 @@ h1 {
   width: 128px;
   height: auto;
   margin: 15px 10px 15px 15px;
-}
-
-.companyName {
-  font-size: 24px;
 }
 
 .topPicture {
@@ -96,15 +94,17 @@ main {
 }
 @media screen and (min-width: 800px) {
   .OC {
+    order: 1;
     background-color: #E3170A;
     color: white;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin: 20px 10px;
     padding: 15px;
     text-decoration: none;
     margin-top: -25px;
+    min-width: 250px;
   }
 }
 
@@ -120,12 +120,20 @@ main {
 }
 @media screen and (min-width: 800px) {
   .OSC {
-    margin-top: -25px;
+    order: 2;
     min-width: fit-content;
+    font-size: 16px;
+    margin-top: -25px;
+    min-width: 250px;
   }
 }
 
 .quoteContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.quoteContainer1 {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -134,6 +142,32 @@ main {
   border-radius: 5px;
   box-sizing: border-box;
   background-color: white;
+}
+@media screen and (min-width: 800px) {
+  .quoteContainer1 {
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    width: 45%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+}
+
+.quoteContainer2 {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .quoteContainer2 {
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    width: 55%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+  }
 }
 
 .face {
@@ -144,11 +178,16 @@ main {
 .quoteText {
   font-size: 19px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   line-height: 1.5;
   flex: 1;
   margin-bottom: 0;
+}
+@media screen and (min-width: 800px) {
+  .quoteText {
+    font-size: 14px;
+  }
 }
 
 .quoteText p {
@@ -162,12 +201,71 @@ main {
   text-align: left;
 }
 
+.challengeCardHideMobile {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .challengeCardHideMobile {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  }
+}
+.challengeCardHideMobile h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 10px 0;
+}
+.challengeCardHideMobile .cardPicture {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: 0;
+}
+.challengeCardHideMobile .starContainer {
+  display: flex;
+  align-items: center;
+  margin: -5px 0 5px 10px;
+}
+.challengeCardHideMobile .starText {
+  font-size: 12px;
+  margin-left: 90px;
+}
+.challengeCardHideMobile p {
+  margin: 0.5rem;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.challengeCardHideMobile .bookButton {
+  padding: 0.5rem 1.5rem;
+  background-color: #e3170a;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 12px;
+  width: auto;
+  align-self: flex-end;
+  margin: 0 10px 10px 0;
+}
+
 .challengeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+}
+.challengeContainer h2 {
+  font-weight: 500;
 }
 
 .cardWrapper {
@@ -176,6 +274,11 @@ main {
   gap: 2rem;
   width: 90%;
   overflow-y: hidden;
+}
+@media screen and (min-width: 800px) {
+  .cardWrapper {
+    overflow-y: visible;
+  }
 }
 
 .challengeCard {
@@ -189,14 +292,12 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 .challengeCard h2 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 15px 0;
 }
-
-.cardPicture {
+.challengeCard .cardPicture {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -204,28 +305,23 @@ main {
   border-top-right-radius: 1rem;
   margin: 0;
 }
-
-.starContainer {
+.challengeCard .starContainer {
   display: flex;
   align-items: center;
   margin: -10px 0 10px 15px;
 }
-
-.starContainer img {
+.challengeCard .starContainer img {
   margin-right: 0.3rem;
 }
-
-.starText {
+.challengeCard .starText {
   font-size: 14px;
 }
-
-.challengeCard p {
+.challengeCard .challengeCard p {
   margin: 1rem;
   font-size: 14px;
   line-height: 1.5;
 }
-
-.bookButton {
+.challengeCard .bookButton {
   padding: 1rem 2rem;
   background-color: #E3170A;
   color: white;
@@ -236,24 +332,79 @@ main {
   align-self: flex-end;
   margin: 0 10px 10px 0;
 }
+@media screen and (min-width: 800px) {
+  .challengeCard {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+}
+.challengeCard h2 {
+  font-size: 16px;
+  margin: 10px 10px 0;
+}
+.challengeCard .cardPicture {
+  height: 150px;
+}
+.challengeCard .starContainer {
+  margin: -5px 0 5px 10px;
+}
+.challengeCard .starText {
+  font-size: 12px;
+  margin-left: 90px;
+}
+.challengeCard p {
+  margin: 0.5rem;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.challengeCard .bookButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 12px;
+  margin: 0 10px 10px 0;
+}
+
+.onlineChallenges {
+  border: none;
+  background-color: white;
+  color: #36769D;
+  width: 100%;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 15px;
+}
+@media screen and (min-width: 800px) {
+  .onlineChallenges {
+    order: 1;
+    background-color: #E3170A;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 10px;
+    padding: 15px;
+    text-decoration: none;
+    min-width: 250px;
+  }
+}
 
 .challengeButton {
   background-color: #8ACFE5;
   border: none;
   border-radius: 5px;
-  font-size: 15px;
-  font-weight: 800;
-  margin: 2rem 0 1.5rem;
-  width: 70%;
-  height: 2.5rem;
-  padding: 0.5rem 1rem;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 10px;
 }
-
-.onlineChallenges {
-  color: #36769D;
-  text-decoration: underline;
-  margin-top: 1rem;
-  display: block;
+@media screen and (min-width: 800px) {
+  .challengeButton {
+    order: 2;
+    min-width: 250px;
+    font-size: 16px;
+  }
 }
 
 .fullStory {
