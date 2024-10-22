@@ -4,12 +4,6 @@ html {
   flex-direction: column;
   align-content: center;
 }
-@media screen and (min-width: 800px) {
-  html {
-    display: grid;
-    grid-template-columns: repeat(12 1fr);
-  }
-}
 
 .top {
   background-color: #011827;
@@ -131,6 +125,8 @@ main {
 .quoteContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .quoteContainer1 {
@@ -143,15 +139,39 @@ main {
   box-sizing: border-box;
   background-color: white;
 }
+.quoteContainer1 .face {
+  width: 73.34px;
+  height: auto;
+  margin-right: 10px;
+}
+.quoteContainer1 .quoteText {
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 0;
+}
+.quoteContainer1 .quote small {
+  display: block;
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+}
 @media screen and (min-width: 800px) {
   .quoteContainer1 {
-    display: flex;
-    padding: 10px;
-    margin: 15px;
+    margin: 15px 25px;
     width: 45%;
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: white;
+    max-width: 400px;
+  }
+  .quoteContainer1 .face {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+  }
+  .quoteContainer1 .quoteText {
+    font-size: 14px;
   }
 }
 
@@ -162,43 +182,34 @@ main {
   .quoteContainer2 {
     display: flex;
     padding: 10px;
-    margin: 15px;
-    width: 55%;
+    margin: 15px 25px;
+    width: 45%;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: white;
+    max-width: 400px;
   }
-}
-
-.face {
-  width: 73.34px;
-  margin-right: 10px;
-}
-
-.quoteText {
-  font-size: 19px;
-  font-style: italic;
-  font-weight: 500;
-  text-align: left;
-  line-height: 1.5;
-  flex: 1;
-  margin-bottom: 0;
-}
-@media screen and (min-width: 800px) {
-  .quoteText {
+  .quoteContainer2 .face {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    align-self: center;
+  }
+  .quoteContainer2 .quoteText {
     font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5;
+    flex: 1;
+    margin-bottom: 0;
   }
-}
-
-.quoteText p {
-  margin-bottom: 0;
-}
-
-.quote small {
-  display: block;
-  font-size: 12px;
-  color: gray;
-  text-align: left;
+  .quoteContainer2 .quote small {
+    display: block;
+    font-size: 12px;
+    color: gray;
+    text-align: left;
+  }
 }
 
 .challengeCardHideMobile {
@@ -219,7 +230,7 @@ main {
   }
 }
 .challengeCardHideMobile h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 10px 10px 0;
 }
@@ -340,7 +351,7 @@ main {
   }
 }
 .challengeCard h2 {
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 10px 0;
 }
 .challengeCard .cardPicture {
@@ -359,7 +370,7 @@ main {
   line-height: 1.4;
 }
 .challengeCard .bookButton {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.3rem;
   font-size: 12px;
   margin: 0 10px 10px 0;
@@ -415,6 +426,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 800px) {
+  .fullStory {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 
 .fullStoryText {
   display: flex;
@@ -425,6 +442,13 @@ main {
   margin-left: 30px;
   margin-right: 30px;
 }
+@media screen and (min-width: 800px) {
+  .fullStoryText {
+    display: grid;
+    grid-column: 2/span 3;
+    margin: 20px 100px 5px;
+  }
+}
 
 .fullStoryButton {
   background-color: black;
@@ -432,19 +456,50 @@ main {
   border: 2px solid #8ACFE5;
   border-radius: 5%;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 15px 30px;
   align-self: center;
   display: flex;
+}
+@media screen and (min-width: 800px) {
+  .fullStoryButton {
+    grid-column: 3;
+    gap: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .articles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .osToday {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 800px) {
+  .osToday {
+    display: contents;
+  }
+}
 
 .osToday img {
   width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .osToday img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .osTodayText {
@@ -452,13 +507,45 @@ main {
   align-self: center;
   margin: 20px 10px 20px 10px;
 }
+@media screen and (min-width: 800px) {
+  .osTodayText {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 26px;
+    margin: 2rem 3rem 0.5rem 7rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .osTodayText {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 32px;
+    margin: 2rem 7rem 0.5rem;
+  }
+}
 
 .osTodayTextSmall {
   display: flex;
   align-self: center;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
   margin: 0 10px 40px 10px;
+}
+@media screen and (min-width: 800px) {
+  .osTodayTextSmall {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+    margin: 0 3rem 0.5rem 7rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .osTodayTextSmall {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 24px;
+    margin: 0 7rem 0.5rem;
+  }
 }
 
 .osTodayButton {
@@ -473,14 +560,33 @@ main {
   font-weight: bold;
   font-size: 18px;
 }
+@media screen and (min-width: 800px) {
+  .osTodayButton {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 1rem 7rem 0.5rem;
+  }
+}
 
 .allChallenges {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 800px) {
+  .allChallenges {
+    display: contents;
+    grid-row: 2;
+  }
+}
 
 .allChallenges img {
   width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .allChallenges img {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 .allChallengesText {
@@ -488,13 +594,45 @@ main {
   align-self: center;
   margin: 20px 10px 20px 10px;
 }
+@media screen and (min-width: 800px) {
+  .allChallengesText {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 26px;
+    margin: 2rem 3rem 0.5rem 7rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .allChallengesText {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 2rem 7rem 0.5rem;
+    font-size: 32px;
+  }
+}
 
 .allChallengesTextSmall {
   display: flex;
   align-self: center;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
   margin: 0 10px 40px 10px;
+}
+@media screen and (min-width: 800px) {
+  .allChallengesTextSmall {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+    margin: 0 3rem 0.5rem 7rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .allChallengesTextSmall {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 7rem 0.5rem;
+    font-size: 24px;
+  }
 }
 
 .allChallengesButton {
@@ -509,60 +647,113 @@ main {
   font-weight: bold;
   font-size: 18px;
 }
+@media screen and (min-width: 800px) {
+  .allChallengesButton {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 1rem 7rem 0.5rem;
+  }
+}
 
 footer {
   background-color: black;
   color: white;
   padding: 40px 0 40px;
 }
+@media screen and (min-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    height: 250px;
+  }
+}
 
 .footerName {
   margin: 10px 10px 10px 15px;
+}
+@media screen and (min-width: 800px) {
+  .footerName {
+    grid-column: 2;
+    margin: 3rem 0 0 5rem;
+    font-size: 18px;
+  }
 }
 
 .footerTextSmall {
   margin: 10px 15px;
   font-size: 14px;
 }
+@media screen and (min-width: 800px) {
+  .footerTextSmall {
+    display: grid;
+    grid-column: span 2;
+    margin: 0.2rem 0 0 5rem;
+    font-size: 18px;
+  }
+}
 
 .siteMap {
   display: flex;
   flex-direction: column;
 }
-
-.siteMapText {
-  margin: 10px 15px 10px;
-}
-
 .siteMap ul {
   display: flex;
   flex-direction: column;
   margin: 0 -25px;
   font-size: 14px;
 }
-
-.siteMap ul li {
+.siteMap li {
   list-style-type: none;
 }
-
-.spacer {
+.siteMap .spacer {
   margin: 10px;
+}
+@media screen and (min-width: 800px) {
+  .siteMap {
+    grid-column: 3;
+    margin: 2rem 0 0 5rem;
+  }
+  .siteMap ul {
+    font-size: 18px;
+  }
+}
+
+.siteMapText {
+  margin: 10px 15px 10px;
+}
+@media screen and (min-width: 800px) {
+  .siteMapText {
+    grid-column: 3;
+    font-size: 18px;
+  }
 }
 
 .followUs {
   display: flex;
   flex-direction: column;
 }
-
-.followUsText {
-  margin: 20px 15px 10px;
-}
-
 .followUs ul {
   display: flex;
   flex-direction: column;
   margin: 0 -25px;
   font-size: 14px;
+}
+@media screen and (min-width: 800px) {
+  .followUs {
+    margin: 1rem 0 0 2rem;
+  }
+  .followUs ul {
+    font-size: 18px;
+  }
+}
+
+.followUsText {
+  margin: 20px 15px 10px;
+}
+@media screen and (min-width: 800px) {
+  .followUsText {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
