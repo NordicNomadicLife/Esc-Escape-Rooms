@@ -17,20 +17,51 @@ header {
   height: 144px;
 }
 
+.menyBtn {
+  background-color: black;
+}
+
+.navLink {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
 .navLink ul {
-  display: none;
   list-style: none;
 }
+.navLink .nav {
+  background-color: black;
+  margin: 1rem;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
 @media screen and (min-width: 800px) {
-  .navLink ul {
+  .navLink .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
-.navLink ul :hover {
+@media screen and (min-width: 800px) {
+  .navLink {
+    position: static;
+    background-color: black;
+  }
+}
+.navLink a:hover {
   color: #8ACFE5;
   cursor: pointer;
 }

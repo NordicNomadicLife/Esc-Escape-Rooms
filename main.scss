@@ -20,27 +20,58 @@ header {
     height: 144px;
 }
 
-.menyBtn{
-    background-color: none;
-}
-.navLink {
-    ul {
-        display: none;
-        list-style: none;
+.menyBtn {
+    background-color: black;
 
-        @media screen and (min-width: $MinBreakPoint) {
+}
+
+.navLink {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(white, 0.5);
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    
+    ul{
+    list-style: none;
+    }
+
+    .nav {
+        background-color: black;
+        margin: 1rem;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        @media screen and (min-width: $MinBreakPoint){
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             margin-top: -10px;
-            font-size: 20px;
-        }
-
-        :hover {
-            color: #8ACFE5;
-            cursor: pointer;
+            font-size: 1.5rem;
         }
     }
+
+    @media screen and (min-width: $MinBreakPoint) {
+        
+        position: static;
+        background-color: black;
+    }
+
+    a:hover {
+        color: #8ACFE5;
+        cursor: pointer;
+    }
+
 }
 
 .topTop {
@@ -673,7 +704,7 @@ footer {
     color: white;
     padding: 40px 0 40px;
 
-   
+
     @media screen and (min-width: $MinBreakPoint) {
         display: grid;
         grid-template-columns: 40% 20% 20% 20%;
@@ -698,7 +729,7 @@ footer {
 
     @media screen and (min-width: $MinBreakPoint) {
         display: grid;
-        grid-column: span 2 ;
+        grid-column: span 2;
         margin: 0.2rem 0 0 5rem;
         font-size: 18px;
     }
@@ -726,9 +757,9 @@ footer {
     @media screen and (min-width: $MinBreakPoint) {
         grid-column: 3;
         margin: 2rem 0 0 5rem;
-        
-        ul{
-           font-size: 18px; 
+
+        ul {
+            font-size: 18px;
         }
     }
 }
@@ -745,17 +776,18 @@ footer {
 .followUs {
     display: flex;
     flex-direction: column;
-    
+
     ul {
         display: flex;
         flex-direction: column;
         margin: 0 -25px;
         font-size: 14px;
     }
+
     @media screen and (min-width: $MinBreakPoint) {
         margin: 1rem 0 0 2rem;
 
-        ul{
+        ul {
             font-size: 18px;
         }
     }
