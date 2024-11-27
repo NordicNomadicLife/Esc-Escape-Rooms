@@ -20,25 +20,50 @@ header {
     height: 144px;
 }
 
-.menyBtn {
+.menuBtn {
     background-color: black;
+    width: 2.5rem;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 
+     @media screen and (min-width: $MinBreakPoint){
+        display: none;
+    } 
+}
+
+.closeBtn {
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+
+    @media screen and (min-width: $MinBreakPoint){
+        display: none;
+    } 
 }
 
 .navLink {
-    
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: rgba(white, 0.5);
-    display: flex;
+    display: none;
     justify-content: stretch;
     align-items: stretch;
-    
-    ul{
-    list-style: none;
+
+    @media screen and (min-width: $MinBreakPoint){
+        display: flex;
+    }
+
+    ul {
+        list-style: none;
     }
 
     .nav {
@@ -52,7 +77,7 @@ header {
         align-items: center;
         gap: 4rem;
 
-        @media screen and (min-width: $MinBreakPoint){
+        @media screen and (min-width: $MinBreakPoint) {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -62,7 +87,7 @@ header {
     }
 
     @media screen and (min-width: $MinBreakPoint) {
-        
+
         position: static;
         background-color: black;
     }
