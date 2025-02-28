@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node.js": "^0.0.1-security",
     "sass": "^1.80.3"
+  },
+  "devDependencies": {
+    "cypress": "^14.1.0"
   }
 }
